@@ -1,7 +1,10 @@
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    font-weight: 500;
+    margin-left: 6vh;
+    margin-right: 6vh;
 
     img {
         width: 15%;
