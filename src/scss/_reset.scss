@@ -8,3 +8,35 @@
 a {
     text-decoration: none;
 }
+
+.sectionHeaders {
+    margin: 8vh;
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+    flex-direction: column;
+
+    h2 {
+        font-size: 40px;
+    }
+
+    p {
+        font-style: italic;
+    }
+}
+
+.buttonLikeClickableLinks {
+    color: white;
+    background-color: #ffc800;
+    padding: 4vh;
+    width: 35vh;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    &:hover {
+        background-color: #d9aa00;
+    }
+}

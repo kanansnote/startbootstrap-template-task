@@ -1,0 +1,53 @@
+footer {
+
+    #footerTop {
+        background-image: url("../images/footer-top/map-image.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 95vh;
+
+        .footerTopHeader {
+            color: white;
+        }
+
+        #footerTopForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5vh;
+            
+            #footerFormTypes {
+                display: flex;
+                align-items: center;
+                gap: 5vh;
+                
+                #footerInputAreas {
+                    display: flex;
+                    flex-direction: column;
+
+                    input {
+                        padding: 3vh;
+                        width: 83vh;
+                        height: 10vh;
+                        border-radius: 1vh;
+                        margin: 2vh;
+                        border: none;
+                    }
+
+                }
+
+                textarea {
+                    width: 80vh;
+                    height: 39vh;
+                    padding: 5vh;
+                    border-radius: 1vh;
+                }
+            }
+
+        }
+
+    }
+}

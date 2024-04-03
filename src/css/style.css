@@ -9,6 +9,35 @@ a {
   text-decoration: none;
 }
 
+.sectionHeaders {
+  margin: 8vh;
+  display: flex;
+  align-items: center;
+  gap: 2vh;
+  flex-direction: column;
+}
+.sectionHeaders h2 {
+  font-size: 40px;
+}
+.sectionHeaders p {
+  font-style: italic;
+}
+
+.buttonLikeClickableLinks {
+  color: white;
+  background-color: #ffc800;
+  padding: 4vh;
+  width: 35vh;
+  text-align: center;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.buttonLikeClickableLinks:hover {
+  background-color: #d9aa00;
+}
+
 header {
   display: flex;
   justify-content: space-around;
@@ -63,33 +92,6 @@ main #UpBanner #upBannerText h3 {
 }
 main #UpBanner #upBannerText h1 {
   font-size: 4.5rem;
-}
-main #UpBanner #upBannerText a {
-  color: white;
-  background-color: #ffc800;
-  padding: 4vh;
-  width: 35vh;
-  text-align: center;
-  border-radius: 8px;
-  transition: 0.3s ease-in-out;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-main #UpBanner #upBannerText a:hover {
-  background-color: #d9aa00;
-}
-main .sectionHeaders {
-  margin: 8vh;
-  display: flex;
-  align-items: center;
-  gap: 2vh;
-  flex-direction: column;
-}
-main .sectionHeaders h2 {
-  font-size: 40px;
-}
-main .sectionHeaders p {
-  font-style: italic;
 }
 main #Services {
   display: flex;
@@ -159,4 +161,46 @@ main #Portfolio #portfolioCards .portfolioCard .portfolioCardHeader p {
   font-size: 16px;
   font-style: italic;
   color: #6c757d;
+}
+
+footer #footerTop {
+  background-image: url("../images/footer-top/map-image.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 95vh;
+}
+footer #footerTop .footerTopHeader {
+  color: white;
+}
+footer #footerTop #footerTopForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+}
+footer #footerTop #footerTopForm #footerFormTypes {
+  display: flex;
+  align-items: center;
+  gap: 5vh;
+}
+footer #footerTop #footerTopForm #footerFormTypes #footerInputAreas {
+  display: flex;
+  flex-direction: column;
+}
+footer #footerTop #footerTopForm #footerFormTypes #footerInputAreas input {
+  padding: 3vh;
+  width: 83vh;
+  height: 10vh;
+  border-radius: 1vh;
+  margin: 2vh;
+  border: none;
+}
+footer #footerTop #footerTopForm #footerFormTypes textarea {
+  width: 80vh;
+  height: 39vh;
+  padding: 5vh;
+  border-radius: 1vh;
 }/*# sourceMappingURL=style.css.map */
