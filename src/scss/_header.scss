@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+        width: 15%;
+        height: 15vh;
+        object-fit: contain;
+    }
+
+    nav {
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 5vh;
+
+            li {
+                a {
+                    color: #e8e6e3;
+                    text-transform: uppercase;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        color: #ffc800;
+                    }
+                }
+            }
+        }
+    }
+}

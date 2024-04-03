@@ -1,0 +1,150 @@
+main {
+
+    #UpBanner {
+        display: flex;
+        justify-content: center;
+        color: white;
+        height: 90vh;
+        
+        img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        #upBannerText {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 5vh;
+            
+            h3 {
+                font-style: italic;
+                font-size: 2.25rem;
+            }
+
+            h1 {
+                font-size: 4.5rem;
+            }
+
+            a {
+                color: white;
+                background-color: #ffc800;
+                padding: 4vh;
+                width: 35vh;
+                text-align: center;
+                border-radius: 8px;
+                transition: 0.3s ease-in-out;
+                text-transform: uppercase;
+                font-weight: 700;
+
+                &:hover {
+                    background-color: #d9aa00;
+                }
+            }
+        }
+    }
+
+    .sectionHeaders {
+        margin: 8vh;
+        display: flex;
+        align-items: center;
+        gap: 2vh;
+        flex-direction: column;
+
+        h2 {
+            font-size: 40px;
+        }
+
+        p {
+            font-style: italic;
+        }
+    }
+
+    #Services {
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+
+        #servicesCards {
+            display: flex;
+            justify-content: space-evenly;
+            
+            .servicesCard {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                width: 50vh;
+                gap: 2vh;
+
+                i {
+                    background-color: #ffc800;
+                    width: 20vh;
+                    height: 20vh;
+                    padding: 5vh 0;
+                    border-radius: 30vh;
+                    color: white;
+                    font-size: 10vh;
+                }
+
+                p {
+                    color: #6c757d;
+                    line-height: 4vh;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    #Portfolio {
+        display: flex;
+        flex-direction: column;
+        background-color: #f8f9fa;
+        margin-top: 6vh;
+
+        #portfolioCards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4vh;
+
+            .portfolioCard {
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    object-fit: contain;
+                    width: 60vh;
+                    height: 50vh;
+                    margin-bottom: -3vh;
+                }
+
+
+                .portfolioCardHeader {
+                    background-color: white;
+                    width: 60vh;
+                    padding: 4.5vh 0 4.5vh 0;
+
+                    text-align: center;
+
+                    h4 {
+                        font-size: 24px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        font-style: italic;
+                        color:#6c757d;
+                    }
+                }
+            }
+        }
+    }
+}
