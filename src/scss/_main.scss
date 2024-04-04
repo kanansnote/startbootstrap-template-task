@@ -171,4 +171,20 @@ main {
             }
         }
     }
+
+    #OurAmazingTeam {
+        background-color: #f8f9fa;
+    }
+
+    #OurPartners {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5vh 0 5vh 0;
+
+        img {
+            width: 25vh;
+            object-fit: contain;
+        }
+    }
 }

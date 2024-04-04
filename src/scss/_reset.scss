@@ -40,3 +40,33 @@ a {
         background-color: #d9aa00;
     }
 }
+
+.socialLinks {
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 2vh;
+
+        li {
+            padding: 10px;
+            background-color: #212529;
+            border-radius: 25vh;
+            width: 6vh;
+            height: 6vh;
+            bottom: 0;
+            text-align: center;
+            cursor: pointer;
+
+            i {
+                font-size: 18px;
+                color: white;
+            }
+
+            &:hover {
+                bottom: 15px;
+                background-color: #424649;
+            }
+        }
+    }
+}

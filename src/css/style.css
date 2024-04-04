@@ -38,6 +38,30 @@ a {
   background-color: #d9aa00;
 }
 
+.socialLinks ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2vh;
+}
+.socialLinks ul li {
+  padding: 10px;
+  background-color: #212529;
+  border-radius: 25vh;
+  width: 6vh;
+  height: 6vh;
+  bottom: 0;
+  text-align: center;
+  cursor: pointer;
+}
+.socialLinks ul li i {
+  font-size: 18px;
+  color: white;
+}
+.socialLinks ul li:hover {
+  bottom: 15px;
+  background-color: #424649;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -211,6 +235,20 @@ main #About #aboutInfo .aboutImageWithText .aboutImageTextRight {
   right: 10vh;
   text-align: left;
 }
+main #OurAmazingTeam {
+  background-color: #f8f9fa;
+}
+main #OurPartners {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5vh 0 5vh 0;
+}
+main #OurPartners img {
+  width: 25vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 
 footer #FooterTop {
   background-image: url("../images/footer-top/map-image.jpeg");
@@ -258,29 +296,6 @@ footer #FooterBottom {
   justify-content: space-between;
   align-items: center;
   padding: 5vh;
-}
-footer #FooterBottom #socialLinks ul {
-  list-style-type: none;
-  display: flex;
-  gap: 2vh;
-}
-footer #FooterBottom #socialLinks ul li {
-  padding: 10px;
-  background-color: #212529;
-  border-radius: 25vh;
-  width: 6vh;
-  height: 6vh;
-  bottom: 0;
-  text-align: center;
-  cursor: pointer;
-}
-footer #FooterBottom #socialLinks ul li i {
-  font-size: 18px;
-  color: white;
-}
-footer #FooterBottom #socialLinks ul li:hover {
-  bottom: 15px;
-  background-color: #424649;
 }
 footer #FooterBottom #footerBottomNavLinks {
   display: flex;
