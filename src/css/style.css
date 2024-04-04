@@ -132,6 +132,7 @@ main #Portfolio {
   flex-direction: column;
   background-color: #f8f9fa;
   margin-top: 6vh;
+  padding-bottom: 9vh;
 }
 main #Portfolio #portfolioCards {
   display: flex;
@@ -164,6 +165,51 @@ main #Portfolio #portfolioCards .portfolioCard .portfolioCardHeader p {
   font-size: 16px;
   font-style: italic;
   color: #6c757d;
+}
+main #About #aboutInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+main #About #aboutInfo .aboutImageWithText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+main #About #aboutInfo .aboutImageWithText img {
+  border: 7px solid #e9ecef;
+  border-radius: 20vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 25vh;
+  margin-bottom: 15vh;
+  z-index: 1;
+}
+main #About #aboutInfo .aboutImageWithText::after {
+  content: "";
+  position: absolute;
+  top: 25vh;
+  left: 105vh;
+  border-right: 2px solid #e9ecef;
+  width: 1vh;
+  height: 65vh;
+  z-index: -1;
+}
+main #About #aboutInfo .aboutImageWithText .aboutImageBothText {
+  line-height: 32px;
+  position: absolute;
+  top: 0;
+  width: 70vh;
+  z-index: 1;
+}
+main #About #aboutInfo .aboutImageWithText .aboutImageTextLeft {
+  left: 10vh;
+  text-align: right;
+}
+main #About #aboutInfo .aboutImageWithText .aboutImageTextRight {
+  right: 10vh;
+  text-align: left;
 }
 
 footer #FooterTop {

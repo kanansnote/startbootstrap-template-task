@@ -76,6 +76,7 @@ main {
         flex-direction: column;
         background-color: #f8f9fa;
         margin-top: 6vh;
+        padding-bottom: 9vh;
 
         #portfolioCards {
             display: flex;
@@ -112,6 +113,60 @@ main {
                         font-style: italic;
                         color:#6c757d;
                     }
+                }
+            }
+        }
+    }
+
+    #About {
+
+        #aboutInfo {
+            display: flex;
+            flex-direction: column;
+            gap: 5vh;
+
+            .aboutImageWithText {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                position: relative;
+    
+                img {
+                    border: 7px solid #e9ecef; 
+                    border-radius: 20vh;
+                    object-fit: contain;
+                    width: 25vh;
+                    margin-bottom: 15vh;
+                    z-index: 1;
+                }
+                
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 25vh;
+                    left: 105vh;
+                    border-right: 2px solid #e9ecef;
+                    width: 1vh;
+                    height: 65vh;
+                    z-index: -1;
+                }
+    
+                .aboutImageBothText {
+                    line-height: 32px;
+                    position: absolute;
+                    top: 0;
+                    width: 70vh;
+                    z-index: 1;
+                }
+
+                .aboutImageTextLeft {
+                    left: 10vh;
+                    text-align: right;
+                }
+
+                .aboutImageTextRight {
+                    right: 10vh;
+                    text-align: left;
                 }
             }
         }
