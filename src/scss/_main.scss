@@ -31,7 +31,6 @@ main {
             h1 {
                 font-size: 4.5rem;
             }
-
         }
     }
 
@@ -124,6 +123,7 @@ main {
             display: flex;
             flex-direction: column;
             gap: 5vh;
+            margin-bottom: 10vh;
 
             .aboutImageWithText {
                 display: flex;
@@ -168,12 +168,51 @@ main {
                     right: 10vh;
                     text-align: left;
                 }
+
+                #aboutLastBox {
+                    width: 25vh;
+                    height: 25vh;
+                    border-radius: 30vh;
+                    border: 7px solid #e9ecef; 
+                    background-color: #ffc800;
+                    color: white;
+                    padding: 8vh 4.4vh;
+                    font-weight: bold;
+                }
             }
         }
     }
 
-    #OurAmazingTeam {
+    #Team {
         background-color: #f8f9fa;
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+
+        #teamCards {
+            display: flex;
+            justify-content: space-evenly;
+
+            .teamCard {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 2vh;
+
+                img {
+                    border: 7px solid #e9ecef; 
+                    border-radius: 20vh;
+                    object-fit: contain;
+                    width: 30vh;
+                }
+            }
+        }
+
+        p {
+            text-align: center;
+            padding-bottom: 5vh;
+        }
+
     }
 
     #OurPartners {

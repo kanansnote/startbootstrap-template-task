@@ -5,6 +5,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -67,11 +71,12 @@ header {
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
-  margin-left: 6vh;
-  margin-right: 6vh;
+  padding-left: 6vh;
+  padding-right: 6vh;
+  z-index: 100;
 }
-header img {
-  width: 15%;
+header a img {
+  width: 35%;
   height: 15vh;
   -o-object-fit: contain;
      object-fit: contain;
@@ -194,6 +199,7 @@ main #About #aboutInfo {
   display: flex;
   flex-direction: column;
   gap: 5vh;
+  margin-bottom: 10vh;
 }
 main #About #aboutInfo .aboutImageWithText {
   display: flex;
@@ -235,8 +241,42 @@ main #About #aboutInfo .aboutImageWithText .aboutImageTextRight {
   right: 10vh;
   text-align: left;
 }
-main #OurAmazingTeam {
+main #About #aboutInfo .aboutImageWithText #aboutLastBox {
+  width: 25vh;
+  height: 25vh;
+  border-radius: 30vh;
+  border: 7px solid #e9ecef;
+  background-color: #ffc800;
+  color: white;
+  padding: 8vh 4.4vh;
+  font-weight: bold;
+}
+main #Team {
   background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+main #Team #teamCards {
+  display: flex;
+  justify-content: space-evenly;
+}
+main #Team #teamCards .teamCard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
+}
+main #Team #teamCards .teamCard img {
+  border: 7px solid #e9ecef;
+  border-radius: 20vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 30vh;
+}
+main #Team p {
+  text-align: center;
+  padding-bottom: 5vh;
 }
 main #OurPartners {
   display: flex;
@@ -250,7 +290,7 @@ main #OurPartners img {
      object-fit: contain;
 }
 
-footer #FooterTop {
+footer #Contact {
   background-image: url("../images/footer-top/map-image.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -259,25 +299,25 @@ footer #FooterTop {
   width: 100%;
   height: 95vh;
 }
-footer #FooterTop .footerTopHeader {
+footer #Contact .footerTopHeader {
   color: white;
 }
-footer #FooterTop #footerTopForm {
+footer #Contact #footerTopForm {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5vh;
 }
-footer #FooterTop #footerTopForm #footerFormTypes {
+footer #Contact #footerTopForm #footerFormTypes {
   display: flex;
   align-items: center;
   gap: 5vh;
 }
-footer #FooterTop #footerTopForm #footerFormTypes #footerInputAreas {
+footer #Contact #footerTopForm #footerFormTypes #footerInputAreas {
   display: flex;
   flex-direction: column;
 }
-footer #FooterTop #footerTopForm #footerFormTypes #footerInputAreas input {
+footer #Contact #footerTopForm #footerFormTypes #footerInputAreas input {
   padding: 3vh;
   width: 83vh;
   height: 10vh;
@@ -285,7 +325,7 @@ footer #FooterTop #footerTopForm #footerFormTypes #footerInputAreas input {
   margin: 2vh;
   border: none;
 }
-footer #FooterTop #footerTopForm #footerFormTypes textarea {
+footer #Contact #footerTopForm #footerFormTypes textarea {
   width: 80vh;
   height: 39vh;
   padding: 5vh;

@@ -3,13 +3,16 @@ header {
     justify-content: space-between;
     align-items: center;
     font-weight: 500;
-    margin-left: 6vh;
-    margin-right: 6vh;
+    padding-left: 6vh;
+    padding-right: 6vh;
+    z-index: 100;
 
-    img {
-        width: 15%;
-        height: 15vh;
-        object-fit: contain;
+    a {
+        img {
+            width: 35%;
+            height: 15vh;
+            object-fit: contain;
+        }
     }
 
     nav {
