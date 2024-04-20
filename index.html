@@ -13,11 +13,11 @@
         <a href="index.html"><img src="./src/images/logo/navbar-logo.svg" alt="Logo"></a>
         <nav>
             <ul>
-                <li><a href="#Services">Services</a></li>
-                <li><a href="#Portfolio">Portfolio</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Team">Team</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><a class="active-link" href="#Services">Services</a></li>
+                <li><a class="active-link" href="#Portfolio">Portfolio</a></li>
+                <li><a class="active-link" href="#About">About</a></li>
+                <li><a class="active-link" href="#Team">Team</a></li>
+                <li><a class="active-link" href="#Contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -60,42 +60,60 @@
             </div>
             <div id="portfolioCards">
                 <div class="portfolioCard">
-                    <img src="./src/images/portfolio-card/1.jpg" alt="Card Image 1">
+                    <a href="#">
+                        <img src="./src/images/portfolio-card/1.jpg" alt="Card Image 1">
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
                     <div class="portfolioCardHeader">
                         <h4>Threads</h4>
                         <p>Illustration</p>
                     </div>
                 </div>
                 <div class="portfolioCard">
-                    <img src="./src/images/portfolio-card/2.jpg" alt="Card Image 2">
+                    <a href="#">
+                        <img src="./src/images/portfolio-card/2.jpg" alt="Card Image 2">
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
                     <div class="portfolioCardHeader">
                         <h4>Explore</h4>
                         <p>Graphic Design</p>
                     </div>
                 </div>
                 <div class="portfolioCard">
-                    <img src="./src/images/portfolio-card/3.jpg" alt="Card Image 3">
+                    <a href="#">
+                        <img src="./src/images/portfolio-card/3.jpg" alt="Card Image 3">
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
                     <div class="portfolioCardHeader">
                         <h4>Finish</h4>
                         <p>Identity</p>
                     </div>
                 </div>
                 <div class="portfolioCard">
-                    <img src="./src/images/portfolio-card/4.jpg" alt="Card Image 4">
+                    <a href="#">
+                        <img src="./src/images/portfolio-card/4.jpg" alt="Card Image 4">
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
                     <div class="portfolioCardHeader">
                         <h4>Lines</h4>
                         <p>Branding</p>
                     </div>
                 </div>
                 <div class="portfolioCard">
-                    <img src="./src/images/portfolio-card/5.jpg" alt="Card Image 5">
+                    <a href="#">
+                        <img src="./src/images/portfolio-card/5.jpg" alt="Card Image 5">
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
                     <div class="portfolioCardHeader">
                         <h4>Southwest</h4>
                         <p>Website Design</p>
                     </div>
                 </div>
                 <div class="portfolioCard">
-                    <img src="./src/images/portfolio-card/6.jpg" alt="Card Image 6">
+                    <a href="#">
+                        <img src="./src/images/portfolio-card/6.jpg" alt="Card Image 6">
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
                     <div class="portfolioCardHeader">
                         <h4>Window</h4>
                         <p>Photography</p>
@@ -201,14 +219,12 @@
                 Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
             </p>
         </section>
-        <section id="OurPartners">
+        <div id="OurPartners">
             <img src="./src/images/partners/microsoft.svg" alt="Microsoft">
             <img src="./src/images/partners/google.svg" alt="Google">
             <img src="./src/images/partners/facebook.svg" alt="Facebook">
             <img src="./src/images/partners/ibm.svg" alt="IBM">
-        </section>
-    </main>
-    <footer>
+        </div>
         <section id="Contact">
             <div class="footerTopHeader sectionHeaders">
                 <h2>CONTACT US</h2>
@@ -228,6 +244,8 @@
                 <a class="buttonLikeClickableLinks" href="#">Send Message</a>
             </div>
         </section>
+    </main>
+    <footer>
         <section id="FooterBottom">
             <p>© 2024 Kanan N. All rights reserved.</p>
             <div class="socialLinks">

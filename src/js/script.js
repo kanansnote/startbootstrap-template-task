@@ -16,3 +16,22 @@ window.onscroll = function () {
         header.style.backgroundColor = 'transparent';
     }
 };
+
+// Get all sections and links
+const sections = document.querySelectorAll('section');
+const links = document.querySelectorAll('a');
+
+window.addEventListener('scroll', () => {
+    sections.forEach((section, index) => {
+        const sectionTop = section.getBoundingClientRect().top;
+
+        // Check if the section is visible
+        if (sectionTop >= 0 && sectionTop < window.innerHeight) {
+            // Remove the active class from all links
+            links.forEach(link => link.classList.remove('active-link'));
+
+            // Add the active class to the current link
+            links[index].classList.add('active-link');
+        }
+    });
+});

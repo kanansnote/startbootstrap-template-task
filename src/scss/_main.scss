@@ -87,12 +87,46 @@ main {
             .portfolioCard {
                 display: flex;
                 flex-direction: column;
+                position: relative;
 
-                img {
-                    object-fit: contain;
-                    width: 60vh;
-                    height: 50vh;
-                    margin-bottom: -3vh;
+                a {
+                    img {
+                        object-fit: contain;
+                        width: 60vh;
+                        height: 50vh;
+                        margin-bottom: -3vh;
+                    }
+
+                    i {
+                        position: absolute;
+                        left: 27vh;
+                        top: 20vh;
+                        font-size: 56px;
+                        color: white;
+                        z-index: 2;
+                        opacity: 0;
+                    }
+
+                    &:hover i {
+                        opacity: 1;
+                    }
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 60vh;
+                        height: 45vh;
+                        top: 2.5vh;
+                        left: 0;
+                        background-color: #ffc800cc;
+                        transition: 0.4s;
+                        opacity: 0;
+                        z-index: 1;
+                    }
+    
+                    &:hover::after {
+                        opacity: 1;
+                    }
                 }
 
 
@@ -224,6 +258,55 @@ main {
         img {
             width: 25vh;
             object-fit: contain;
+        }
+    }
+
+    #Contact {
+        background-image: url("../images/footer-top/map-image.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+
+        .footerTopHeader {
+            color: white;
+        }
+
+        #footerTopForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5vh;
+            
+            #footerFormTypes {
+                display: flex;
+                align-items: center;
+                gap: 5vh;
+                
+                #footerInputAreas {
+                    display: flex;
+                    flex-direction: column;
+
+                    input {
+                        padding: 3vh;
+                        width: 83vh;
+                        height: 10vh;
+                        border-radius: 1vh;
+                        margin: 2vh;
+                        border: none;
+                    }
+
+                }
+
+                textarea {
+                    width: 80vh;
+                    height: 39vh;
+                    padding: 5vh;
+                    border-radius: 1vh;
+                }
+            }
         }
     }
 }

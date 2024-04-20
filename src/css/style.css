@@ -66,6 +66,10 @@ a {
   background-color: #424649;
 }
 
+.active-link {
+  color: #ffc800; /* Change this to the color you want for the active link */
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -173,13 +177,41 @@ main #Portfolio #portfolioCards {
 main #Portfolio #portfolioCards .portfolioCard {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
-main #Portfolio #portfolioCards .portfolioCard img {
+main #Portfolio #portfolioCards .portfolioCard a img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 60vh;
   height: 50vh;
   margin-bottom: -3vh;
+}
+main #Portfolio #portfolioCards .portfolioCard a i {
+  position: absolute;
+  left: 27vh;
+  top: 20vh;
+  font-size: 56px;
+  color: white;
+  z-index: 2;
+  opacity: 0;
+}
+main #Portfolio #portfolioCards .portfolioCard a:hover i {
+  opacity: 1;
+}
+main #Portfolio #portfolioCards .portfolioCard a:after {
+  content: "";
+  position: absolute;
+  width: 60vh;
+  height: 45vh;
+  top: 2.5vh;
+  left: 0;
+  background-color: rgba(255, 200, 0, 0.8);
+  transition: 0.4s;
+  opacity: 0;
+  z-index: 1;
+}
+main #Portfolio #portfolioCards .portfolioCard a:hover::after {
+  opacity: 1;
 }
 main #Portfolio #portfolioCards .portfolioCard .portfolioCardHeader {
   background-color: white;
@@ -289,35 +321,34 @@ main #OurPartners img {
   -o-object-fit: contain;
      object-fit: contain;
 }
-
-footer #Contact {
+main #Contact {
   background-image: url("../images/footer-top/map-image.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 95vh;
+  height: 100vh;
 }
-footer #Contact .footerTopHeader {
+main #Contact .footerTopHeader {
   color: white;
 }
-footer #Contact #footerTopForm {
+main #Contact #footerTopForm {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5vh;
 }
-footer #Contact #footerTopForm #footerFormTypes {
+main #Contact #footerTopForm #footerFormTypes {
   display: flex;
   align-items: center;
   gap: 5vh;
 }
-footer #Contact #footerTopForm #footerFormTypes #footerInputAreas {
+main #Contact #footerTopForm #footerFormTypes #footerInputAreas {
   display: flex;
   flex-direction: column;
 }
-footer #Contact #footerTopForm #footerFormTypes #footerInputAreas input {
+main #Contact #footerTopForm #footerFormTypes #footerInputAreas input {
   padding: 3vh;
   width: 83vh;
   height: 10vh;
@@ -325,15 +356,16 @@ footer #Contact #footerTopForm #footerFormTypes #footerInputAreas input {
   margin: 2vh;
   border: none;
 }
-footer #Contact #footerTopForm #footerFormTypes textarea {
+main #Contact #footerTopForm #footerFormTypes textarea {
   width: 80vh;
   height: 39vh;
   padding: 5vh;
   border-radius: 1vh;
 }
+
 footer #FooterBottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 5vh;
 }
